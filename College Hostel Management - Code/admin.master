@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="StyleSheet.css" rel="Stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            width: 218px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <table style="height: 67px; width: 1320px;" bgcolor="#666666">
+        <tr>
+            <td align="center" style="font-size: large; color: #FFFFFF;">
+            COLLEGE HOSTEL MANAGEMENT SYSTEM
+            </td>
+        </tr>
+    </table>
+    <table style="height: 7px; width: 1320px;" bgcolor="#CCCCCC">
+        <tr>
+            <td>
+           
+            </td>
+        </tr>
+    </table>
+        <table style="font-family: cambria; font-size: small; font-weight: bold; height: 311px; width: 327px;">
+            <tr>
+                <td class="style1" valign="top">
+                    <fieldset style="height: 288px; width: 207px; background-color: #999999;">
+                        <legend>
+                        Menu
+                        </legend>
+                        <table style="height: 262px; width: 191px">
+                            <tr>
+                                <td>
+                                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/adminhome.aspx">Home</asp:HyperLink>
+                                </td>
+                            </tr>
+                              <tr>
+                                <td>
+                                    <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/roommaster.aspx">Room Master</asp:HyperLink>
+                                </td>
+                            </tr>
+                              <tr>
+                                <td>
+                                    <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/foodmas.aspx">Food Master</asp:HyperLink>
+                                </td>
+                            </tr>
+                             <tr>
+                                <td>
+                                    <asp:HyperLink ID="HyperLink2" runat="server" 
+                                        NavigateUrl="~/viewapplication.aspx" >View Application</asp:HyperLink>
+                                </td>
+                            </tr>
+                             <tr>
+                                <td>
+                                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/approvedlist.aspx" 
+                                        >Approved Application</asp:HyperLink>
+                                </td>
+                            </tr>
+                              <tr>
+                                <td>
+                                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/checkavail.aspx">Check Room Availability</asp:HyperLink>
+                                </td>
+                            </tr>
+                              <tr>
+                                <td>
+                                    <asp:HyperLink ID="HyperLink6" runat="server" 
+                                        NavigateUrl="~/changepassword.aspx">Change Password</asp:HyperLink>
+                                </td>
+                            </tr>
+                            
+                             <tr>
+                                <td>
+                                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/index.aspx">Logout</asp:HyperLink>
+                                </td>
+                            </tr>
+                        </table>
+                    </fieldset>
+                </td>
+                <td valign="top">
+                 <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </div>
+    </form>
+</body>
+</html>
