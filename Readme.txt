@@ -4,9 +4,7 @@ Username : admin
 
 Password  : admin
 
-BUYPROJECTCODE.IN
 
-Thank you for Purchasing our E Product,
 1)This project can be customizable according to your own ideas.
 2)Modification help and guidelines is available in modify and execute menu in the website.
 3)You can download 2 or more projects and merge as a huge application
